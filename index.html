@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Análisis</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Análisis de Complejidad</h1>
+        <div class="controls">
+            <input id="searchItem" type="text" placeholder="Enter item to search">
+            <button id="btn_searchLinkedList">Search LinkedList</button>
+            <button id="btn_searchArrayList">Search ArrayList</button>
+        </div>
+    </header>
+    <div class="main-controls">
+        <label for="items">Number of items to be processed:</label>
+        <input type="number" min="1" value="0" id="noItems">
+        <button id="btn_AddLinkedList">Add LinkedList</button>
+        <button id="btn_AddArrayList">Add ArrayList</button>
+    </div>
+
+    <div class="additional-buttons">
+        <button id="btn_BubbleLinked">Bubble LinkedList</button>
+        <button id="btn_BubbleArray">Bubble ArrayList</button>
+        <button id="btn_MergeLinked">Merge LinkedList</button>
+        <button id="btn_MergeArray">Merge ArrayList</button>
+        <button id="btn_RadixLinked">Radix LinkedList</button>
+        <button id="btn_RadixArray">Radix ArrayList</button>
+    </div>
+
+    <div class="grafica">
+        <canvas id="MiGrafica" width="1000" height="700"></canvas>
+    </div>
+    <div class="tabla">
+        <table id="resultados-tiempos">
+            <thead>
+                <tr>
+                    <th>Operación</th>
+                    <th>Estructura</th>
+                    <th>Tiempo (segundos)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="src/controllers/scrip.mjs" type="module"></script>
+</body>
+</html>
